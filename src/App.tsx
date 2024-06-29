@@ -16,6 +16,11 @@ const App = () => {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({route}) => ({
+          // headerStyle: {
+          //   height: 80,
+          // },
+          // headerTitleAlign: 'center',
+          // headerTitle: () => <Header />,
           headerShown: false,
           tabBarIcon: ({focused, color, size}) => (
             <TabBarIcon

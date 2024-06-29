@@ -1,6 +1,4 @@
 import {StyleSheet, TouchableOpacity} from 'react-native';
-import {Text} from 'react-native-svg';
-import typography from '../styles/typography';
 import ThemedText from './ThemedText';
 import colors from '../styles/colors';
 

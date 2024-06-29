@@ -14,6 +14,10 @@ type ThemedTextProps = TextProps & {
     | 'iconTextActive'
     | 'iconTextInactive';
   style?: StyleProp<TextStyle>;
+  fill?: string;
+  x?: string;
+  y?: string;
+  textAnchor?: string;
 };
 
 const ThemedText: React.FC<ThemedTextProps> = ({

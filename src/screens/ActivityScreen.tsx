@@ -1,11 +1,14 @@
-import {View,Text, StyleSheet} from "react-native"
+import {ScrollView} from 'react-native';
+import Header from '../components/Header';
+import GradientHeaderText from '../components/GradientHeaderText';
 
-const Activity = () => {
-    return(
-        <View>
-            <Text>Activity Screen</Text>
-        </View>
-    )
-}
+const Activity = ({route}) => {
+  return (
+    <ScrollView>
+      <Header />
+      <GradientHeaderText text={route.name} fontSize={40} height={240} />
+    </ScrollView>
+  );
+};
 
 export default Activity;
