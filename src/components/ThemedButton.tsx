@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 8,
-    paddingVertical: 12,
+    paddingVertical: 6,
+    paddingHorizontal: 18,
   },
   solidButton: {
     backgroundColor: colors.primary,

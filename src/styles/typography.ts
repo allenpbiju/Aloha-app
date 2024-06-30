@@ -15,6 +15,16 @@ const typography = StyleSheet.create({
   cardHeading: {
     fontSize: 24,
     fontFamily: 'IBMPlexMono-Bold',
+    color: colors.text,
+  },
+  cardHeadingPrimary: {
+    fontSize: 24,
+    fontFamily: 'IBMPlexMono-Bold',
+    color: colors.primary,
+  },
+  cardHeadingSmall: {
+    fontSize: 16,
+    fontFamily: 'IBMPlexMono-Bold',
     color: colors.primary,
   },
   sectionHeading: {

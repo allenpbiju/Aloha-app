@@ -6,22 +6,23 @@ import Svg, {
   Defs,
   Stop,
   TSpan,
-  Rect,
   Image,
 } from 'react-native-svg';
 
-const screenWidth = Dimensions.get('window').width;
+const screenWidth = Dimensions.get('screen').width;
 
 interface GradientTextProps {
   text: string;
   fontSize: number;
   height?: number;
+  image: string;
 }
 
 const GradientHeaderText: React.FC<GradientTextProps> = ({
   text,
   height = 480,
   fontSize,
+  image,
 }) => {
   const words = text.split(' ');
 
@@ -29,7 +30,7 @@ const GradientHeaderText: React.FC<GradientTextProps> = ({
     <Svg
       viewBox={`0 0 ${screenWidth} ${height}`}
       height={height}
-      width={screenWidth}>
+      width={'100%'}>
       <Defs>
         <LinearGradient
           id="rainbow"
@@ -48,9 +49,7 @@ const GradientHeaderText: React.FC<GradientTextProps> = ({
         y="0"
         width={screenWidth}
         height={height}
-        href={{
-          uri: 'https://images.pexels.com/photos/26100664/pexels-photo-26100664/free-photo-of-a-young-male-deer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        }}
+        href={image}
         preserveAspectRatio="xMidYMid slice"
       />
       <Text

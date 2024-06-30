@@ -6,7 +6,9 @@ type ThemedTextProps = TextProps & {
   variant:
     | 'mainHeading'
     | 'pageHeading'
+    | 'cardHeadingPrimary'
     | 'cardHeading'
+    | 'cardHeadingSmall'
     | 'sectionHeading'
     | 'normalText'
     | 'buttonText'
